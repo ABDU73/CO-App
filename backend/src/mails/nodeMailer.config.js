@@ -11,6 +11,9 @@ const transporter = nodemailer.createTransport({
     user: process.env.NODEMAIL_EMAIL, // Your Ethereal email
     pass: process.env.pass, // Your Ethereal password
   },
+  logger: true, 
+  debug: true
+
 });
 
 // Utility function to send a test email
